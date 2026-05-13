@@ -204,10 +204,10 @@ function Index() {
               </div>
               <span className="cl-arrow">↗</span>
             </a>
-            <a className="contact-link" href="#" onClick={(e) => e.preventDefault()}>
+            <a className="contact-link" href="https://www.linkedin.com/in/hannan-butt-321558243" target="_blank" rel="noreferrer">
               <div className="cl-left">
                 <span className="cl-type">LinkedIn</span>
-                <span className="cl-val">Add your profile URL</span>
+                <span className="cl-val">hannan-butt-321558243</span>
               </div>
               <span className="cl-arrow">↗</span>
             </a>
