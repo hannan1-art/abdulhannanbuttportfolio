@@ -94,7 +94,8 @@ function Index() {
         <ul className="nav-links">
           <li><button onClick={() => scrollTo("skills")}>Skills</button></li>
           <li><button onClick={() => scrollTo("projects")}>Projects</button></li>
-          <li><button onClick={() => scrollTo("about")}>About & Contact</button></li>
+          <li><button onClick={() => scrollTo("about")}>About</button></li>
+          <li><button onClick={() => scrollTo("contact")}>Contact</button></li>
         </ul>
         <div className="nav-right">
           <div className="nav-avail"><span className="dot" /> Open to opportunities</div>
@@ -186,7 +187,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="contact-panel">
+          <div className="contact-panel" id="contact">
             <h3>Get in touch</h3>
             <p>Open to full-time roles, consulting work, and interesting problems. Just send a message.</p>
             <a className="contact-link" href="mailto:bhannan107@gmail.com">

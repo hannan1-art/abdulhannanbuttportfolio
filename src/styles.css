@@ -30,7 +30,7 @@ html.dark {
 
 html, body { background: var(--bg); color: var(--ink); transition: background-color 0.3s ease, color 0.3s ease; }
 html { scroll-behavior: smooth; }
-section[id], header[id] { scroll-margin-top: 80px; }
+[id] { scroll-margin-top: 80px; }
 
 body {
   font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
