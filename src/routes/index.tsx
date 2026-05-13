@@ -197,14 +197,14 @@ function Index() {
               </div>
               <span className="cl-arrow">↗</span>
             </a>
-            <a className="contact-link" href="https://wa.me/923160588828" target="_blank" rel="noreferrer">
+            <a className="contact-link" href="https://wa.me/923160588828" target="_blank" rel="noopener noreferrer">
               <div className="cl-left">
                 <span className="cl-type">Phone / WhatsApp</span>
                 <span className="cl-val">+92 316 058 8828</span>
               </div>
               <span className="cl-arrow">↗</span>
             </a>
-            <a className="contact-link" href="https://www.linkedin.com/in/hannan-butt-321558243" target="_blank" rel="noreferrer">
+            <a className="contact-link" href="https://www.linkedin.com/in/hannan-butt-321558243" target="_blank" rel="noopener noreferrer">
               <div className="cl-left">
                 <span className="cl-type">LinkedIn</span>
                 <span className="cl-val">hannan-butt-321558243</span>
