@@ -192,6 +192,15 @@ function Index() {
           <div className="contact-panel" id="contact">
             <h3>Get in touch</h3>
             <p>Open to full-time roles, consulting work, and interesting problems. Just send a message.</p>
+            <div className="work-modes">
+              <span className="wm-label">Work modes</span>
+              <div className="wm-pills">
+                <span className="wm-pill">Onsite</span>
+                <span className="wm-pill">Hybrid</span>
+                <span className="wm-pill">Remote</span>
+              </div>
+              <span className="wm-note">Worked across all three. Open to any.</span>
+            </div>
             <a className="contact-link" href="mailto:bhannan107@gmail.com">
               <span className="cl-icon" aria-hidden="true">
                 <SiGmail size={16} color="#EA4335" />
