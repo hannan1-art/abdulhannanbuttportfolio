@@ -187,7 +187,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="contact-panel">
+          <div className="contact-panel" id="contact">
             <h3>Get in touch</h3>
             <p>Open to full-time roles, consulting work, and interesting problems. Just send a message.</p>
             <a className="contact-link" href="mailto:bhannan107@gmail.com">
