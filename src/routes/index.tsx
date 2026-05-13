@@ -94,7 +94,8 @@ function Index() {
         <ul className="nav-links">
           <li><button onClick={() => scrollTo("skills")}>Skills</button></li>
           <li><button onClick={() => scrollTo("projects")}>Projects</button></li>
-          <li><button onClick={() => scrollTo("about")}>About & Contact</button></li>
+          <li><button onClick={() => scrollTo("about")}>About</button></li>
+          <li><button onClick={() => scrollTo("contact")}>Contact</button></li>
         </ul>
         <div className="nav-right">
           <div className="nav-avail"><span className="dot" /> Open to opportunities</div>
