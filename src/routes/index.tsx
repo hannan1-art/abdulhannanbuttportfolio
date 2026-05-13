@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Mail, MessageCircle, Linkedin } from "lucide-react";
+import { SiGmail, SiWhatsapp, SiLinkedin } from "react-icons/si";
 
 export const Route = createFileRoute("/")({
   component: Index,
