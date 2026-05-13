@@ -1,8 +1,40 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
+
+function ThemeToggle() {
+  const [dark, setDark] = useState(false);
+  useEffect(() => {
+    const stored = localStorage.getItem("theme");
+    const prefers = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = stored ? stored === "dark" : prefers;
+    setDark(isDark);
+    document.documentElement.classList.toggle("dark", isDark);
+  }, []);
+  const toggle = () => {
+    const next = !dark;
+    setDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
+  };
+  return (
+    <button className="theme-toggle" onClick={toggle} aria-label="Toggle theme" title={dark ? "Switch to light" : "Switch to dark"}>
+      {dark ? (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+        </svg>
+      ) : (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      )}
+    </button>
+  );
+}
 
 const skills = [
   { label: "AWS Core", items: ["EC2", "S3", "Lambda", "API Gateway", "DynamoDB", "RDS", "CloudFront", "SNS", "SQS", "Step Functions", "Cognito"] },
@@ -64,7 +96,10 @@ function Index() {
           <li><button onClick={() => scrollTo("projects")}>Projects</button></li>
           <li><button onClick={() => scrollTo("about")}>About & Contact</button></li>
         </ul>
-        <div className="nav-avail"><span className="dot" /> Open to opportunities</div>
+        <div className="nav-right">
+          <div className="nav-avail"><span className="dot" /> Open to opportunities</div>
+          <ThemeToggle />
+        </div>
       </nav>
 
       <header className="hero" id="hero">

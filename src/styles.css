@@ -10,13 +10,25 @@
   --accent: #c84b2f;
   --rule: rgba(26, 23, 20, 0.12);
   --card: #fffdf8;
+  --shadow-soft: rgba(26, 23, 20, 0.04);
+}
+
+html.dark {
+  --bg: #15130f;
+  --ink: #f1ede4;
+  --ink2: #b8b1a4;
+  --ink3: #706a60;
+  --accent: #e85a3c;
+  --rule: rgba(241, 237, 228, 0.12);
+  --card: #1d1a15;
+  --shadow-soft: rgba(0, 0, 0, 0.3);
 }
 
 @font-face { font-family: fallback; src: local("Georgia"); }
 
 * , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html, body { background: var(--bg); color: var(--ink); }
+html, body { background: var(--bg); color: var(--ink); transition: background-color 0.3s ease, color 0.3s ease; }
 
 body {
   font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
@@ -107,7 +119,20 @@ body {
 .p-left h3 { font-family: 'Instrument Serif', serif; font-size: 1.4rem; font-weight: 400; margin-bottom: 12px; line-height: 1.2; }
 .p-left p { font-size: 0.88rem; line-height: 1.75; color: var(--ink2); font-weight: 300; margin-bottom: 20px; }
 .p-stack { display: flex; flex-wrap: wrap; gap: 6px; }
-.stack-pill { padding: 3px 10px; background: rgba(26, 23, 20, 0.06); border-radius: 2px; font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--ink3); }
+.stack-pill { padding: 3px 10px; background: color-mix(in oklab, var(--ink) 6%, transparent); border-radius: 2px; font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--ink3); }
+
+/* Theme toggle */
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: transparent; border: 1px solid var(--rule);
+  color: var(--ink2); cursor: pointer; padding: 0;
+  margin-left: 24px;
+  transition: color 0.2s, border-color 0.2s, transform 0.3s;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle svg { width: 15px; height: 15px; }
+.nav-right { display: flex; align-items: center; }
 .p-right { display: flex; flex-direction: column; gap: 12px; padding-top: 4px; }
 .metric-line { display: flex; align-items: baseline; gap: 10px; }
 .metric-val { font-family: 'Instrument Serif', serif; font-size: 1.5rem; color: var(--ink); line-height: 1; min-width: 70px; }
