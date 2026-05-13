@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { SiGmail, SiWhatsapp, SiLinkedin } from "react-icons/si";
+import { SiGmail, SiWhatsapp } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
 
 export const Route = createFileRoute("/")({
   component: Index,
