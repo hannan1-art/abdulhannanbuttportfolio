@@ -48,14 +48,14 @@ const projects = [
   {
     n: "01",
     title: "Serverless E-Commerce Platform",
-    desc: "Fully serverless storefront handling 50K+ daily transactions. Frontend on S3 + CloudFront, backend via API Gateway + Lambda, data in DynamoDB — every resource in Terraform, every deploy automated through CodeBuild.",
+    desc: "Fully serverless storefront handling 50K+ daily transactions. Frontend on S3 + CloudFront, backend via API Gateway + Lambda, data in DynamoDB every resource in Terraform, every deploy automated through CodeBuild.",
     stack: ["Lambda", "API Gateway", "DynamoDB", "S3", "CloudFront", "Terraform", "CodeBuild"],
     metrics: [["99.99%", "uptime"], ["50K+", "daily transactions"], ["40%", "cost reduction"]],
   },
   {
     n: "02",
     title: "Cloud-Native Dockerized App Deployment",
-    desc: "Containerized a Node.js application and moved it to ECS Fargate. Cluster, task definitions, and IAM all in Terraform. GitHub Actions pipeline builds the image, pushes to ECR, and deploys — no manual steps.",
+    desc: "Containerized a Node.js application and moved it to ECS Fargate. Cluster, task definitions, and IAM all in Terraform. GitHub Actions pipeline builds the image, pushes to ECR, and deploys no manual steps.",
     stack: ["Docker", "ECS Fargate", "ECR", "ALB", "VPC", "Terraform", "GitHub Actions"],
     metrics: [["90%", "less manual deployment effort"], ["99.9%", "uptime"]],
   },
@@ -69,14 +69,14 @@ const projects = [
   {
     n: "04",
     title: "Event-Driven Order Processing System",
-    desc: "Fully asynchronous order pipeline — API Gateway receives, SQS buffers, Lambda processes, Step Functions orchestrates retries and state. 100% infrastructure provisioned via Terraform, deployed via GitHub Actions.",
+    desc: "Fully asynchronous order pipeline API Gateway receives, SQS buffers, Lambda processes, Step Functions orchestrates retries and state. 100% infrastructure provisioned via Terraform, deployed via GitHub Actions.",
     stack: ["API Gateway", "Lambda", "Step Functions", "SQS", "Terraform", "GitHub Actions"],
     metrics: [["100%", "async reliability"], ["80%", "less manual provisioning"]],
   },
   {
     n: "05",
     title: "AWS Video Streaming Platform",
-    desc: "Serverless video platform for thousands of concurrent viewers. CloudFront handles global delivery, Cognito secures auth, Lambda manages workflows. Frontend, backend, and CDN all automated — zero manual releases.",
+    desc: "Serverless video platform for thousands of concurrent viewers. CloudFront handles global delivery, Cognito secures auth, Lambda manages workflows. Frontend, backend, and CDN all automated zero manual releases.",
     stack: ["CloudFront", "Lambda", "Cognito", "S3", "CloudFormation", "Terraform", "CloudWatch"],
     metrics: [["70%", "faster global load times"], ["99.99%", "uptime"]],
   },
@@ -108,7 +108,7 @@ function Index() {
           <h1>Building cloud<br />infrastructure that<br /><em>actually works.</em></h1>
           <p className="hero-bio">
             3+ years designing serverless, containerized, and event-driven architectures on AWS.
-            I turn complex infrastructure problems into clean, automated, cost-efficient systems —
+            I turn complex infrastructure problems into clean, automated, cost-efficient systems 
             and I have the numbers to show for it.
           </p>
           <div className="hero-actions">
@@ -126,7 +126,7 @@ function Index() {
       </header>
 
       <section className="section" id="skills">
-        <div className="section-label">02 — Skills</div>
+        <div className="section-label">02 Skills</div>
         <h2>What I work with</h2>
         <table className="skills-table">
           <tbody>
@@ -145,7 +145,7 @@ function Index() {
       </section>
 
       <section className="section" id="projects">
-        <div className="section-label">03 — Projects</div>
+        <div className="section-label">03 Projects</div>
         <h2>Selected work</h2>
         {projects.map((p) => (
           <article key={p.n} className="project-item">
@@ -172,12 +172,12 @@ function Index() {
       <section className="section" id="about">
         <div className="about-grid">
           <div>
-            <div className="section-label">04 — About</div>
+            <div className="section-label">04 About</div>
             <h2>A bit about me</h2>
             <div className="about-text">
-              <p>I'm a <strong>cloud & DevOps engineer</strong> based in Lahore with 3+ years building on AWS. My focus is serverless and containerized architectures — systems that scale without someone babysitting them at 2am.</p>
+              <p>I'm a <strong>cloud & DevOps engineer</strong> based in Lahore with 3+ years building on AWS. My focus is serverless and containerized architectures systems that scale without someone babysitting them at 2am.</p>
               <p>I care a lot about <strong>infrastructure as code</strong>. If you can't reproduce a deployment from scratch in one command, something's wrong. Terraform is how I think about infrastructure, and CI/CD is how I make sure nobody's deploying by hand.</p>
-              <p>Beyond building, I've helped teams adopt DevOps practices — writing runbooks, setting up monitoring, and making sure engineers have the observability they need to move fast without breaking things.</p>
+              <p>Beyond building, I've helped teams adopt DevOps practices writing runbooks, setting up monitoring, and making sure engineers have the observability they need to move fast without breaking things.</p>
             </div>
             <div className="edu-block">
               <div className="edu-label">Education</div>
@@ -215,7 +215,7 @@ function Index() {
       </section>
 
       <footer>
-        <span>Abdul Hannan Butt — Cloud & DevOps Engineer</span>
+        <span>Abdul Hannan Butt Cloud & DevOps Engineer</span>
         <span>Lahore, Pakistan · 2025</span>
       </footer>
     </>
