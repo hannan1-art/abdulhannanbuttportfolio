@@ -10,13 +10,25 @@
   --accent: #c84b2f;
   --rule: rgba(26, 23, 20, 0.12);
   --card: #fffdf8;
+  --shadow-soft: rgba(26, 23, 20, 0.04);
+}
+
+html.dark {
+  --bg: #15130f;
+  --ink: #f1ede4;
+  --ink2: #b8b1a4;
+  --ink3: #706a60;
+  --accent: #e85a3c;
+  --rule: rgba(241, 237, 228, 0.12);
+  --card: #1d1a15;
+  --shadow-soft: rgba(0, 0, 0, 0.3);
 }
 
 @font-face { font-family: fallback; src: local("Georgia"); }
 
 * , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html, body { background: var(--bg); color: var(--ink); }
+html, body { background: var(--bg); color: var(--ink); transition: background-color 0.3s ease, color 0.3s ease; }
 
 body {
   font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
