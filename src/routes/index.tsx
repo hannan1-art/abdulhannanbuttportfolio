@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { Mail, MessageCircle, Linkedin } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -191,6 +192,9 @@ function Index() {
             <h3>Get in touch</h3>
             <p>Open to full-time roles, consulting work, and interesting problems. Just send a message.</p>
             <a className="contact-link" href="mailto:bhannan107@gmail.com">
+              <span className="cl-icon" aria-hidden="true">
+                <Mail size={18} strokeWidth={1.5} />
+              </span>
               <div className="cl-left">
                 <span className="cl-type">Email</span>
                 <span className="cl-val">bhannan107@gmail.com</span>
@@ -198,6 +202,9 @@ function Index() {
               <span className="cl-arrow">↗</span>
             </a>
             <a className="contact-link" href="https://wa.me/923160588828" target="_blank" rel="noopener noreferrer">
+              <span className="cl-icon" aria-hidden="true">
+                <MessageCircle size={18} strokeWidth={1.5} />
+              </span>
               <div className="cl-left">
                 <span className="cl-type">Phone / WhatsApp</span>
                 <span className="cl-val">+92 316 058 8828</span>
@@ -205,6 +212,9 @@ function Index() {
               <span className="cl-arrow">↗</span>
             </a>
             <a className="contact-link" href="https://www.linkedin.com/in/hannan-butt-321558243" target="_blank" rel="noopener noreferrer">
+              <span className="cl-icon" aria-hidden="true">
+                <Linkedin size={18} strokeWidth={1.5} />
+              </span>
               <div className="cl-left">
                 <span className="cl-type">LinkedIn</span>
                 <span className="cl-val">hannan-butt-321558243</span>
