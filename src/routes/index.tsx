@@ -194,7 +194,7 @@ function Index() {
             <p>Open to full-time roles, consulting work, and interesting problems. Just send a message.</p>
             <a className="contact-link" href="mailto:bhannan107@gmail.com">
               <span className="cl-icon" aria-hidden="true">
-                <Mail size={18} strokeWidth={1.5} />
+                <SiGmail size={16} />
               </span>
               <div className="cl-left">
                 <span className="cl-type">Email</span>
@@ -204,7 +204,7 @@ function Index() {
             </a>
             <a className="contact-link" href="https://wa.me/923160588828" target="_blank" rel="noopener noreferrer">
               <span className="cl-icon" aria-hidden="true">
-                <MessageCircle size={18} strokeWidth={1.5} />
+                <SiWhatsapp size={16} />
               </span>
               <div className="cl-left">
                 <span className="cl-type">Phone / WhatsApp</span>
@@ -214,7 +214,7 @@ function Index() {
             </a>
             <a className="contact-link" href="https://www.linkedin.com/in/hannan-butt-321558243" target="_blank" rel="noopener noreferrer">
               <span className="cl-icon" aria-hidden="true">
-                <Linkedin size={18} strokeWidth={1.5} />
+                <FaLinkedin size={16} />
               </span>
               <div className="cl-left">
                 <span className="cl-type">LinkedIn</span>
